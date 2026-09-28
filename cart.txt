@@ -1,0 +1,59 @@
+Customer: Nasim (Priority: 45)
+Items in the cart:
+fexo (Quantity: 10)
+fenadin (Quantity: 10)
+
+Customer: Abrar (Priority: 23)
+Items in the cart:
+napa (Quantity: 15)
+ace (Quantity: 21)
+
+Customer: Mahdi (Priority: 78)
+Items in the cart:
+fexo (Quantity: 35)
+ace (Quantity: 5)
+
+Customer: Tasfiq (Priority: 0)
+Items in the cart:
+ace (Quantity: 9)
+fenadin (Quantity: 6)
+
+Customer: N (Priority: 0)
+Items in the cart:
+fexo (Quantity: 4)
+
+Customer: Nasim (Priority: 23)
+Items in the cart:
+fexo (Quantity: 90)
+
+Customer: Nasim (Priority: 25)
+Items in the cart:
+ace (Quantity: 15)
+
+Customer: Nas (Priority: 45)
+Items in the cart:
+fexo (Quantity: 45)
+napa (Quantity: 23)
+
+Customer: Nas (Priority: 45)
+Items in the cart:
+Customer: n (Priority: 3)
+Items in the cart:
+fexo (Quantity: 34)
+
+Customer: n (Priority: 34)
+Items in the cart:
+fexo (Quantity: 34)
+
+Customer: ne (Priority: 35)
+Items in the cart:
+fexo (Quantity: 67)
+
+Customer: Nasim (Priority: 25)
+Items in the cart:
+fexo (Quantity: 10)
+
+Customer: Arik (Priority: 1)
+Items in the cart:
+Pantonix (Quantity: 2)
+

@@ -1,0 +1,175 @@
+# depslib dependency file v1.0
+1717055341 source:c:\users\nasim\desktop\lab c++\project225\quetype.cpp
+	"quetype.h"
+
+1717055341 c:\users\nasim\desktop\lab c++\project225\quetype.h
+
+1717414441 source:c:\users\nasim\desktop\lab c++\project225\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"StackType.cpp"
+	"quetype.cpp"
+	"BST.cpp"
+	"storeType.h"
+	<queue>
+	<tuple>
+	<cstdlib>
+	<windows.h>
+
+1717055341 c:\users\nasim\desktop\lab c++\project225\quetype.cpp
+	"quetype.h"
+
+1717414432 source:c:\users\nasim\desktop\lab c++\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\nasim\desktop\lab c++\project225\bst.h
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717209792 c:\users\nasim\desktop\lab c++\project225\stacktype.cpp
+	"StackType.h"
+
+1717209792 c:\users\nasim\desktop\lab c++\project225\stacktype.h
+
+1717414432 c:\users\nasim\desktop\lab c++\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\nasim\desktop\lab c++\project225\storetype.h
+	<string>
+
+1717209792 source:c:\users\nasim\desktop\lab c++\project225\stacktype.cpp
+	"StackType.h"
+
+1717414432 source:c:\users\nasim\desktop\lab c++\project225\storetype.cpp
+	"storeType.h"
+
+1717414432 source:c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\bst.h
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414441 source:c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"StackType.cpp"
+	"quetype.cpp"
+	"BST.cpp"
+	"storeType.h"
+	<queue>
+	<tuple>
+	<cstdlib>
+	<windows.h>
+
+1717209792 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\stacktype.cpp
+	"StackType.h"
+
+1717209792 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\stacktype.h
+
+1717055341 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\quetype.cpp
+	"quetype.h"
+
+1717055341 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\quetype.h
+
+1717414432 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\storetype.h
+	<string>
+
+1717209792 source:c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\stacktype.cpp
+	"StackType.h"
+
+1717414432 source:c:\users\nasim\onedrive\desktop\study\cse225\lab c++\project225\storetype.cpp
+	"storeType.h"
+
+1717414432 source:c:\users\md.munem rahman\onedrive\desktop\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\md.munem rahman\onedrive\desktop\project225\bst.h
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1745052505 source:c:\users\md.munem rahman\onedrive\desktop\project225\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"StackType.cpp"
+	"quetype.cpp"
+	"BST.cpp"
+	"storeType.h"
+	<queue>
+	<tuple>
+	<cstdlib>
+	<windows.h>
+
+1717209792 c:\users\md.munem rahman\onedrive\desktop\project225\stacktype.cpp
+	"StackType.h"
+
+1717209792 c:\users\md.munem rahman\onedrive\desktop\project225\stacktype.h
+
+1717055341 c:\users\md.munem rahman\onedrive\desktop\project225\quetype.cpp
+	"quetype.h"
+
+1717055341 c:\users\md.munem rahman\onedrive\desktop\project225\quetype.h
+
+1717414432 c:\users\md.munem rahman\onedrive\desktop\project225\bst.cpp
+	"BST.h"
+	<limits>
+	<iomanip>
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1717414432 c:\users\md.munem rahman\onedrive\desktop\project225\storetype.h
+	<string>
+
+1717209792 source:c:\users\md.munem rahman\onedrive\desktop\project225\stacktype.cpp
+	"StackType.h"
+
+1717414432 source:c:\users\md.munem rahman\onedrive\desktop\project225\storetype.cpp
+	"storeType.h"
+
