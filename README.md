@@ -1,113 +1,233 @@
 # Store-Management-System
-GenZ Medicine Shop
-A menu-driven medicine shop management application built with C++. The project demonstrates how stacks, queues, binary search trees, and file handling can support inventory management and customer shopping carts.
-Features
-Inventory management
-- Add products and their quantities to the shop.
-- Increase the quantity of an existing product or remove stock.
-- View the current inventory before saving.
-- Display recorded stock actions in reverse chronological order using a stack.
-- Save inventory to final_shop.txt.
-Inventory search
-- Load saved products into a binary search tree (BST).
-- Search for a product by its name.
-- Update a product's availability and save the change.
-- Display products in name order using in-order traversal.
-Customer orders
-- Record a customer's name and a numeric priority value.
-- Add products to a queue-based shopping cart after checking the saved quantity.
-- Remove an item or reduce its quantity in the cart.
-- Display the cart and append the order details to cart.txt.
-Customer priority is recorded with the order; it does not control order processing or sorting.
+# 💊 GenZ Medicine Shop
 
-Technologies and Data Structures
-Component	Purpose
-C++11 or later	Application logic, classes, and templates
-Arrays	Store up to 50 distinct products in the manager's inventory session
-Stack	Store up to 5 inventory action records, displayed most recent first
-Circular queue	Store customer cart entries in insertion order; default capacity is 500
-Binary search tree	Search products and display saved inventory in name order
-Text files	Store inventory and append customer order records
-Windows API	Provide timed pauses through Sleep()
-Code::Blocks	Included IDE project configuration
+A console-based medicine shop management application built with **C++**. It demonstrates the practical use of **stacks, queues, binary search trees, and file handling** to manage inventory and customer shopping carts.
 
+## 📌 Overview
 
-Project Files
-File	Description
-main.cpp	Main menus, inventory operations, and customer order workflow
-BST.h, BST.cpp	Template-based binary search tree implementation
-StackType.h, StackType.cpp	Fixed-capacity stack implementation
-quetype.h, quetype.cpp	Circular queue implementation
-storeType.h, storeType.cpp	Product name and availability model
-final_shop.txt	Saved product quantities
-cart.txt	Appended customer order records
-Project225.cbp	Code::Blocks project file
+GenZ Medicine Shop provides two main workflows:
 
+- **Manager:** Add or remove stock, review action history, search products, and update availability.
+- **Customer:** Add products to a shopping cart, adjust quantities, and save order details.
 
-Getting Started
-Requirements
-- Windows, because the source includes windows.h and uses Sleep().
-- A C++ compiler supporting C++11 or later, such as MinGW GCC.
-- Code::Blocks is optional.
-Download or clone this repository, then open the folder containing main.cpp and Project225.cbp. If the repository contains a nested Project225 folder, use that folder for the following steps.
-Option 1: Code::Blocks
-1. Open Project225.cbp.
-2. Select the GNU GCC compiler installed on your computer.
-3. Enable C++11 or later in the project's compiler settings if necessary.
-4. Set the execution working directory to the project folder containing the text files.
-5. Select Build and Run (F9).
-Option 2: Windows Terminal
-With MinGW's g++ available on your PATH, run these commands from the project folder:
+The project uses custom data structure implementations and text files for storage.
+
+## ✨ Features
+
+### Inventory Management
+- Add products and their quantities.
+- Increase stock for an existing product.
+- Remove stock or delete a product when its quantity reaches zero.
+- View inventory before saving.
+- Display recorded actions in reverse chronological order.
+- Save inventory to `final_shop.txt`.
+
+### Product Search
+- Load saved inventory into a binary search tree.
+- Search products by name.
+- Update product availability.
+- Display products in alphabetical order using in-order traversal.
+
+### Customer Shopping Cart
+- Record customer name and priority.
+- Add products after checking their saved availability.
+- Remove products or reduce quantities.
+- Display cart contents.
+- Append customer order details to `cart.txt`.
+
+> Customer priority is stored with the order but does not currently determine processing order.
+
+## 🛠️ Technologies Used
+
+- **Language:** C++11 or later
+- **Interface:** Command-line interface
+- **IDE:** Code::Blocks project included
+- **Compiler:** GNU GCC / MinGW
+- **Storage:** Text files
+- **Platform:** Windows
+
+## 🧠 Data Structures
+
+| Data Structure | Purpose |
+|---|---|
+| **Array** | Stores product names and quantities during a manager session |
+| **Stack** | Records inventory actions and displays the most recent action first |
+| **Circular Queue** | Stores customer shopping cart entries |
+| **Binary Search Tree** | Supports product search and sorted inventory display |
+
+### Current Capacities
+
+- Manager inventory: **50 distinct products**
+- Action history: **5 recorded actions per session**
+- Customer cart queue: **500 entries**
+
+## 📁 Project Files
+
+| File | Description |
+|---|---|
+| `main.cpp` | Main menus, inventory management, and customer order workflow |
+| `BST.h` / `BST.cpp` | Binary search tree implementation |
+| `StackType.h` / `StackType.cpp` | Stack implementation |
+| `quetype.h` / `quetype.cpp` | Circular queue implementation |
+| `storeType.h` / `storeType.cpp` | Product model containing name and availability |
+| `final_shop.txt` | Saved inventory |
+| `cart.txt` | Customer order records |
+| `Project225.cbp` | Code::Blocks project configuration |
+
+## 🚀 Getting Started
+
+### Requirements
+
+- Windows
+- A compiler supporting **C++11 or later**
+- Code::Blocks with MinGW, or a standalone MinGW compiler
+
+The application uses `windows.h` and `Sleep()`, so the current source targets Windows.
+
+### Run Using Code::Blocks
+
+1. Download or clone the repository.
+2. Open `Project225.cbp` in Code::Blocks.
+3. Select your installed GNU GCC compiler.
+4. Enable **C++11 or later** in the compiler settings if necessary.
+5. Set the execution working directory to the folder containing `final_shop.txt`.
+6. Click **Build and Run**, or press **F9**.
+
+### Run Using the Terminal
+
+Open a terminal in the folder containing `main.cpp`, then compile:
+
+```powershell
 g++ -std=c++11 -Wall main.cpp storeType.cpp -o Project225.exe
+```
+
+Run the application:
+
+```powershell
 .\Project225.exe
-main.cpp directly includes BST.cpp, StackType.cpp, and quetype.cpp to make their template implementations available. The command above compiles storeType.cpp separately.
-Keep the working directory set to the project folder: the application reads and writes its text files using relative paths.
-How to Use
-The main menu provides three options:
+```
+
+> `main.cpp` directly includes the template implementation files for the stack, queue, and BST. The command above compiles `storeType.cpp` separately.
+
+Run the program from the project folder so it can locate its text files.
+
+## 📖 Usage Guide
+
+### Main Menu
+
+```text
 1: Manager Entry
 2: Customer Order
 3: Sign Out
-Set up inventory
-1. Choose Manager Entry → Storing Product.
-2. Choose Add to Shop, then enter a product name and quantity.
-3. Repeat for additional products.
-4. Use Show History or View Final Shop to review the session.
-5. Choose 0: Exit and Save to write the inventory file.
-Each Storing Product session starts with an empty inventory. Saving replaces final_shop.txt; it does not load and extend the previous inventory. To change an existing saved product's quantity, use Check Stored Product → Search for an item instead.
-Search saved products
-Choose Manager Entry → Check Stored Product. Search by the exact product name, optionally update its availability, or select Show all items.
-Create a customer order
-1. Choose Customer Order.
+```
+
+### 1. Add Inventory
+
+Navigate to:
+
+**Manager Entry → Storing Product**
+
+Available actions:
+
+```text
+1: Add to Shop
+2: Remove from Shop
+3: Show History
+4: View Final Shop
+0: Exit and Save
+```
+
+Enter a product name and quantity, then select **0** to save the inventory.
+
+> Each **Storing Product** session starts with an empty inventory. Saving replaces the previous contents of `final_shop.txt`.
+
+### 2. Search or Update Products
+
+Navigate to:
+
+**Manager Entry → Check Stored Product**
+
+Choose from:
+
+```text
+1. Search for an item
+2. Show all items
+3. Exit
+```
+
+After finding a product, you can update its availability. The updated inventory is saved to `final_shop.txt`.
+
+### 3. Create a Customer Order
+
+1. Select **Customer Order**.
 2. Enter a single-word customer name and a numeric priority.
-3. Add products using their saved names and positive quantities.
-4. Remove products or reduce quantities as needed.
-5. Choose Display Cart and Exit to display the order and append it to cart.txt.
-The shopping cart menu includes a 14-second pause before each display.
-Data Format
-final_shop.txt stores one product per line:
+3. Add products and quantities to the cart.
+4. Remove products or reduce quantities if needed.
+5. Select **Display Cart and Exit**.
+
+Non-empty orders are appended to `cart.txt`.
+
+> The shopping cart menu has a built-in 14-second delay before each display.
+
+## 📝 File Formats
+
+### Inventory — `final_shop.txt`
+
+Each line contains a product name followed by its quantity in parentheses:
+
+```text
 Paracetamol (50)
 VitaminC (30)
 Antacid (20)
-Use single-word product names, or underscores instead of spaces, because the inventory loader reads names as a single token. Name matching is case-sensitive.
-An example order entry in cart.txt is:
+```
+
+Use single-word product names or underscores instead of spaces. Product name matching is case-sensitive.
+
+### Customer Orders — `cart.txt`
+
+Example:
+
+```text
 Customer: Alex (Priority: 1)
 Items in the cart:
 Paracetamol (Quantity: 2)
 VitaminC (Quantity: 1)
-Current Limitations
-This is an educational data structures project. The current implementation has several limitations:
-- Customer orders do not deduct quantities from the saved inventory, and repeated cart additions are not checked against the combined quantity already in the cart.
-- Cart display copies the queue without a deep-copy implementation. This can cause a double-free crash after displaying a non-empty cart.
-- Cart matching uses substring searches, so similar product names can match unexpectedly.
-- Input validation is limited; use valid menu numbers and positive quantities.
-- The history stack records only five actions per manager session; additional actions can change stock without being recorded.
-- Saving an empty inventory writes Shop is empty., which the inventory loader cannot parse as a product record.
-- There is no login authentication, pricing, billing, payment processing, or database integration.
-Possible Improvements
-- Implement safe queue copying or display the cart without copying its owned storage.
-- Load existing stock before starting a manager inventory session.
-- Deduct purchased quantities and validate cumulative cart quantities.
-- Add exact product matching and stronger input validation.
+```
+
+## ⚠️ Current Limitations
+
+This project is an educational implementation with the following limitations:
+
+- Customer orders do not automatically deduct stock from the inventory.
+- Repeated cart additions do not validate the combined quantity already in the cart.
+- Displaying a non-empty cart can cause a double-free crash because the queue is copied without a deep-copy implementation.
+- Cart operations use substring matching, which may confuse similar product names.
+- Input validation is limited.
+- Inventory history stores only five actions per manager session.
+- Saving an empty inventory writes a message that the inventory loader cannot parse as a product record.
+- Authentication, pricing, billing, and payment processing are not implemented.
+
+## 🔮 Future Improvements
+
+- Fix queue copying and memory ownership.
+- Load existing inventory before adding or removing stock.
+- Deduct quantities after completing an order.
+- Validate cumulative cart quantities.
+- Use exact product matching.
+- Improve input validation.
 - Support product names containing spaces.
-- Add billing, authentication, and actual priority-based order processing.
-- Replace Windows-specific calls for cross-platform support.
+- Add billing and customer authentication.
+- Implement priority-based order processing.
+- Add cross-platform support.
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+- Object-oriented programming with C++ classes
+- Generic programming using templates
+- Stack and queue operations
+- Binary search tree insertion, searching, and traversal
+- File input and output
+- Menu-driven application design
+- Applying data structures to a practical inventory workflow
